@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     const fetchAccessToken = async () => {
       const rawBaseQuery = fetchBaseQuery({
-        baseUrl: "http://localhost:5000",
+        baseUrl: "https://ricettaserver.onrender.com",
         credentials: "include"
       })
       try{
