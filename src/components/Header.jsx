@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useSignOutMutation } from '../redux/auth/authApi'
@@ -17,7 +17,6 @@ const Header = () => {
         try{
             setIsSigningOut(true)
             const result = await signOut();
-            console.log(result)
             if(result.data){
                 dispatch(clearCredentials())
                 setIsSigningOut(false)

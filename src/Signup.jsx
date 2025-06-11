@@ -60,7 +60,6 @@ const Signup = () => {
             email: formState.email, 
             password: formState.password
         }
-        console.log(userData)
         try{
             const result = await signUp(userData);
             if(result?.data){

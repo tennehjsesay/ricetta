@@ -27,7 +27,6 @@ const Profile = () => {
         try{
             setIsDeleting({status: true, id})
             const deleteResponse = await deleteFavorite(id)
-            console.log(deleteResponse)
             if(deleteResponse){
                 setIsDeleting({status: false, id: ""})
             }

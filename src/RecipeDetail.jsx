@@ -34,7 +34,6 @@ const RecipeDetail = () => {
         recipeResult.data.instructions &&
         instructionRef.current
     ) {
-        console.log(recipeResult?.data)
         setIsLoading(false)
         if(favorites){
             favorites.map(favorite => {
@@ -65,7 +64,6 @@ const RecipeDetail = () => {
             if(addResponse?.data || addResponse.error){
                 setIsAdding(false)
             }
-            console.log(addResponse)
         } catch (err){
             setIsAdding(false)
             console.log(err)

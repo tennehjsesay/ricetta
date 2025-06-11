@@ -58,11 +58,9 @@ const Signin = () => {
     // FORM SUBMIT FUNCTION
     const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(formState)
         try{
             setIsSigningIn(true)
             const result = await signIn(formState)
-            console.log(result)
             if(result?.data){
                 setIsSigningIn(false)
                 dispatch(setCredentials({token: result.data.token, user: result.data.user}))

@@ -14,7 +14,6 @@ const Recipes = () => {
         if(pageRecipes?.data){
             setIsLoading(false)
             setRecipes(pageRecipes?.data.recipes)
-            // console.log(pageRecipes?.data.recipes[0])
         }
     }, [pageRecipes])
 

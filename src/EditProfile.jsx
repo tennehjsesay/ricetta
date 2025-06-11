@@ -58,7 +58,6 @@ const EditProfile = () => {
         try{
             setIsUpdating(true)
             const result = await updateUser(formData)
-            console.log(result)
             if(result?.data){
                 setIsUpdating(false)
                 navigate("/profile")
