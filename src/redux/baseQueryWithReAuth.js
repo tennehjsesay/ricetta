@@ -2,7 +2,7 @@ import { fetchBaseQuery } from "@reduxjs/toolkit/query"
 import { clearCredentials, setCredentials } from "./auth/authSlice"
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "http://localhost:5000",
+    baseUrl: "https://ricettaserver.onrender.com",
     credentials: "include",
     prepareHeaders: (headers, { getState }) => {
         const token = getState().authSlice.token
