@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --default-font-family: "Open Sans", sans-serif;
+  --font-caveat: "Caveat", sans-serif; 
+  --color-pri: #191971;
+  --color-sec: #f5deb4;
+}
+
+/* body{
+  background-color: #191971;
+} */
+
+.instruction ol {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  font-family: "Patrick Hand", sans-serif;
+}
+
+.instruction ol li{
+  border: solid 1px #333;
+  padding: 5px;
+  text-align: center;
+  border-top: none;
+}
+
+.instruction ol li:first-child {
+  border-top: solid 1px #333;
+}
+.instruction ol li:last-child {
+}
+
+.rubbish-rubbish{
+  font-family: "Patrick Hand", sans-serif;
+  border: solid 1px #333;
+  padding: 5px;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.home-main{
+  padding-top: calc(30vh + 3.5rem)
+}
+
+@media (width >= 48rem){
+  .home-main{
+    padding-top: calc(35vh + 3.5rem)
+  }
+}
